@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-/* главная */
+/* главный экран */
 
 .header_container {
   display: flex;
@@ -232,7 +232,7 @@ button {
   }
 }
 
-/* конец главной */
+/* конец главного экрана */
 
 .footer {
   display: flex;
