@@ -110,13 +110,10 @@ button {
 }
 
 @media screen and (max-width: 1200px) {
-  .header_container {
+  .container {
     max-width: 100%;
-    display: flex;
-    justify-content: space-between;
   }
   .header_left {
-    text-align: right;
     padding: 0 40px 0 100px;
   }
   .header_right {
@@ -125,7 +122,6 @@ button {
   .header_left_h1,
   .header_right_h1 {
     font-size: 24px;
-    text-transform: uppercase;
     margin: 150px 0 50px 0;
   }
   .header_left_p,
@@ -142,20 +138,19 @@ button {
     padding: 0 220px 0 0;
   }
   .header-ul {
-    font-size: 14px;
     margin: 40px 0 80px 0;
   }
 }
 
 @media screen and (max-width: 1010px) {
+  .container {
+    max-width: 100%;
+  }
   .header_container {
     max-width: 100%;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .header_left {
-    text-align: right;
     padding: 0 70px;
   }
   .header_right {
@@ -164,7 +159,6 @@ button {
   .header_left_h1,
   .header_right_h1 {
     font-size: 30px;
-    text-transform: uppercase;
     margin: 150px 0 50px 0;
   }
   .header_left_p,
@@ -187,12 +181,12 @@ button {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .header_container {
+@media screen and (max-width: 665px) {
+  .container {
     max-width: 100%;
-    display: flex;
+  }
+  .header_container {
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .header_left {
     padding: 0 50px 0 50px;
@@ -207,7 +201,6 @@ button {
   .header_left_h1,
   .header_right_h1 {
     font-size: 30px;
-    text-transform: uppercase;
     margin: 100px 0 50px 0;
   }
   .header_left_p,
@@ -231,8 +224,117 @@ button {
     text-align: center;
   }
 }
-
 /* конец главного экрана */
+
+/* карта */
+.container_map {
+  background: #f9f9f9;
+  padding: 40px 100px 70px;
+}
+
+#map {
+  /* position: relative; */
+  text-align: center;
+}
+
+/* #map::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+
+  background-color: #176bd933;
+} */
+
+.container_map h1,
+.contacs h3,
+.contacs p {
+  font-family: "Nunito", sans-serif;
+  color: #32495e;
+}
+
+.container_map h1 {
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+.contacs h3 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacs p {
+  margin-bottom: -12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.contacs {
+  display: flex;
+  justify-content: left;
+}
+
+.contacs_section {
+  width: 22%;
+  margin: 20px 60px 0 0;
+}
+
+@media screen and (max-width: 1010px) {
+  .container {
+    max-width: 100%;
+  }
+  .container_map {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 50px;
+  }
+  .contacs h3 {
+    font-size: 20px;
+  }
+  .contacs p {
+    font-size: 18px;
+  }
+  .contacs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contacs_section {
+    width: 40%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .container {
+    max-width: 100%;
+  }
+  .container_map {
+    padding: 10px 30px;
+  }
+  .contacs h3 {
+    font-size: 20px;
+  }
+  .contacs p {
+    font-size: 18px;
+  }
+  .contacs {
+    flex-wrap: wrap;
+  }
+  .contacs_section {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+/* конец карты */
 
 .footer {
   display: flex;
