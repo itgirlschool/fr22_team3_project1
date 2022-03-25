@@ -100,11 +100,11 @@ button {
   line-height: 1.8;
 }
 
-.li_right {
+.li_left {
   list-style: none;
   text-align: right;
 }
-.li_right:after {
+.li_left:after {
   content: "\25CB";
   padding-left: 10px;
 }
@@ -208,20 +208,20 @@ button {
     font-size: 18px;
     margin: 0 0 20px 0;
   }
-
   .header_left_p {
     padding: 10px;
     line-height: 25px;
   }
-
   .header_right_p {
     padding: 10px;
     line-height: 25px;
   }
-
-  .li_right {
+  .li_left {
     list-style: none;
     text-align: center;
+  }
+  .header-ul {
+    list-style-position: inside;
   }
 }
 /* конец главного экрана */
