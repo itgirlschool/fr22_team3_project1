@@ -1,6 +1,7 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  font-family: "Nunito", sans-serif;
 }
 
 /* навбар */
@@ -532,6 +533,7 @@ button {
 
 .section__services {
   background-color: #32495E;
+  font-family: "Nunito", sans-serif;
 }
 
 .container__services {
@@ -577,7 +579,7 @@ button {
 .services__column {
   position: relative;
   display: block;
-  margin-left: 10px;
+  margin: 5px;
   max-width: 279px;
   cursor: pointer;
 }
@@ -676,6 +678,7 @@ button {
 .column__news {
   display: inline-block;
   position: relative;
+  font-family: "Nunito", sans-serif;
 }
 
 .section__news .subtitle__services {
@@ -706,7 +709,7 @@ button {
   display: flex;
   flex-direction: column;
   flex: 1 0 25%;
-  margin-left: 10px;
+  margin: 5px;
   max-width: 281px;
 }
 
@@ -742,6 +745,7 @@ button {
 }
 
 /* конец блока "наши новости и советы" */
+
 /* карта */
 .container_map {
   background: #f9f9f9;
