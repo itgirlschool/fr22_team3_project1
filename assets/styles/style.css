@@ -1,6 +1,7 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  font-family: "Nunito", sans-serif;
 }
 
 /* навбар */
@@ -124,23 +125,28 @@
     padding: 10px;
   }
 }
+
 @media screen and (max-width: 992px) {
   .logo {
     flex: 30%;
   }
+
   .logo-name {
     font-size: 17px;
     line-height: 30px;
   }
+
   .logo-image2 {
     margin: 0;
     background-size: 64.54%;
     background-repeat: no-repeat;
     background-position: center;
   }
+
   .menu_body {
     flex: 70%;
   }
+
   .menu > ul li a {
     font-size: 12px;
     line-height: 18px;
@@ -161,6 +167,7 @@
     padding: 12px 10px;
     background: #32495e;
   }
+
   .icon_menu::before,
   .icon_menu::after {
     content: "";
@@ -168,11 +175,13 @@
     height: 2px;
     width: 26px;
   }
+
   .icon_menu span {
     height: 2px;
     width: 26px;
     background: #f1f6ff;
   }
+
   .close_icon_menu {
     display: flex;
     position: relative;
@@ -180,6 +189,7 @@
     height: 100%;
     margin: 0 5px 0 20px;
   }
+
   .close_icon_menu::before,
   .close_icon_menu::after {
     content: "";
@@ -190,12 +200,15 @@
     height: 2px;
     background: #32495e;
   }
+
   .close_icon_menu::before {
     transform: rotate(45deg);
   }
+
   .close_icon_menu::after {
     transform: rotate(-45deg);
   }
+
   .menu {
     display: none;
     position: absolute;
@@ -206,29 +219,36 @@
     overflow: auto;
     background: #32495e;
   }
+
   .navbar:target .menu {
     display: block;
   }
+
   .navbar:target .icon_menu {
     display: none;
   }
+
   .navbar:target .close-icon_menu {
     display: flex;
   }
+
   .menu > ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 50px 35px 50px 64px;
   }
+
   .menu > ul li a {
     color: #f1f6ff;
     padding: 13px 0;
   }
+
   .submenu a:hover {
     text-decoration: underline;
   }
 }
+
 /* конец навбара */
 
 /* главный экран */
@@ -308,6 +328,7 @@ a {
   list-style: none;
   text-align: right;
 }
+
 .li_left:after {
   content: "\25CB";
   padding-left: 10px;
@@ -372,23 +393,28 @@ button {
     background-position: left bottom;
     background-size: 40%;
   }
+
   .header_right {
     background: url(../images/image2_2.png) no-repeat;
     background-position: right bottom;
     background-size: 55%;
   }
+
   .header_left_h1,
   .header_right_h1 {
     font-size: 18px;
     line-height: 24px;
     margin: 86px 0 26px 0;
   }
+
   .header_left_h1 {
     padding: 0 48px 0 15px;
   }
+
   .header_right_h1 {
     padding: 0 15px 0 48px;
   }
+
   .header_left_p,
   .header_right_p {
     margin: 0 0 20px 0;
@@ -405,18 +431,22 @@ button {
     width: 75%;
     padding: 0 15% 0 48px;
   }
+
   .header-ul {
     margin: 26px 0 46px 0;
     padding: 0 0 0 65px;
     font-size: 12px;
     line-height: 1.8;
   }
+
   .li_left {
     padding-right: 48px;
   }
+
   .header_left_button {
     margin-right: 48px;
   }
+
   .header_right_button {
     margin-left: 48px;
   }
@@ -427,11 +457,13 @@ button {
     flex-wrap: wrap;
     background: linear-gradient(#e95258 50%, #f9f9f9 50%);
   }
+
   .header_left,
   .header_right {
     text-align: left;
     background-image: none;
   }
+
   .header_left_h1,
   .header_right_h1 {
     font-size: 16px;
@@ -439,6 +471,7 @@ button {
     padding: 0 15px;
     margin: 30px 0 15px 0;
   }
+
   .header_left_p,
   .header_right_p {
     width: 90%;
@@ -447,33 +480,282 @@ button {
     font-size: 12px;
     line-height: 15px;
   }
+
   .header-ul {
     margin: 25px 0 30px 0;
     padding: 0 0 0 30px;
     font-size: 12px;
     line-height: 15px;
   }
+
   .header-ul li {
     margin-bottom: 8px;
   }
+
   .li_left {
     list-style: circle;
     text-align: left;
   }
+
   .li_left:after {
     content: none;
   }
+
   .header_left_button,
   .header_right_button {
     margin: 0 0 30px 15px;
   }
+
   .header_left_button a,
   .header_right_button a {
     font-size: 12px;
     line-height: 15px;
   }
 }
+
 /* конец главного экрана */
+
+/*  блок "наши услуги" */
+
+.columns__title {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 20px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 20px;
+  margin-right: 0;
+}
+
+.subtitle__services {
+  margin-top: 70px;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  color: #f9f9f9;
+}
+
+.section__services {
+  background-color: #32495e;
+  font-family: "Nunito", sans-serif;
+}
+
+.container__services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.services__columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .services__columns {
+    max-width: 970px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .services__columns {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services__columns {
+    max-width: none;
+  }
+}
+
+.image {
+  width: 100%;
+  max-height: 240px;
+}
+
+.services__column {
+  position: relative;
+  display: block;
+  margin: 5px;
+  max-width: 279px;
+  cursor: pointer;
+}
+
+.hover__item_first,
+.hover__item_second,
+.hover__item_third,
+.hover__item_fourth {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(50, 73, 94, 0.6);
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.5s ease;
+}
+
+.hover__title {
+  background-color: #e95258;
+  height: 50%;
+}
+
+.services__column:hover .hover__item_first {
+  opacity: 1;
+}
+
+.services__column:hover .hover__item_second {
+  opacity: 1;
+}
+
+.services__column:hover .hover__item_third {
+  opacity: 1;
+}
+
+.services__column:hover .hover__item_fourth {
+  opacity: 1;
+}
+
+.hover__item_first::before {
+  content: url("assets/styles/Vector6.svg");
+  display: flex;
+  margin: auto;
+}
+
+.hover__item_second::before {
+  content: url("assets/styles/Vector8.svg");
+  display: flex;
+  margin: auto;
+}
+
+.hover__item_third::before {
+  content: url("assets/styles/Vector7.svg");
+  display: flex;
+  margin: auto;
+}
+
+.hover__item_fourth::before {
+  content: url("assets/styles/Vector9.svg");
+  display: flex;
+  margin: auto;
+}
+
+.button {
+  border: 1px solid #f9f9f9;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin-bottom: 70px;
+  margin-top: 120px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  width: 160px;
+  height: 50px;
+  background: transparent;
+  color: #f9f9f9;
+}
+
+.button:hover {
+  background-color: #e95258;
+  transition: background-color 0.6s;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+/* конец блока "наши услуги" */
+/* блок "наши новости и советы" */
+
+.column__news {
+  display: inline-block;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+}
+
+.section__news .subtitle__services {
+  color: #32495e;
+}
+
+.block__news {
+  display: inline-block;
+  position: absolute;
+  top: 155px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #e95258;
+  color: #f9f9f9;
+  height: 172px;
+}
+
+.block__bg {
+  background-color: #e95258;
+  height: 172px;
+  color: #f9f9f9;
+  margin: 0;
+}
+
+.column__news {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 25%;
+  margin: 5px;
+  max-width: 281px;
+}
+
+.all {
+  color: #f9f9f9;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.section__news .button {
+  color: #32495e;
+  border-color: #32495e;
+}
+
+.link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 40%;
+  height: 17px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #8093ac;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 10px;
+}
+
+/* конец блока "наши новости и советы" */
 
 /* карта */
 .container_map {
@@ -549,24 +831,30 @@ button {
     max-width: 750px;
     padding: 0 15px;
   }
+
   .container_map {
     padding: 60px 0;
   }
+
   .container_map_container h1 {
     font-size: 34px;
     line-height: 52px;
   }
+
   .contacs h3 {
     font-size: 14px;
     line-height: 17px;
   }
+
   .contacs p {
     font-size: 12px;
     line-height: 18px;
   }
+
   .contacs {
     justify-content: space-between;
   }
+
   .contacs_section,
   .contacs_section_3 {
     width: 31%;
@@ -579,11 +867,9 @@ button {
     max-width: none;
     /* padding: 0; */
   }
+
   .container_map {
     padding: 0;
-  }
-  #map {
-    margin: -15px;
   }
   .container_map_container h1 {
     padding: 30px 15px;
@@ -591,28 +877,34 @@ button {
     font-size: 18px;
     line-height: 26px;
   }
+
   .contacs h3 {
     font-size: 10px;
     line-height: 12px;
   }
+
   .contacs p {
     font-size: 8px;
     line-height: 14px;
   }
+
   .contacs {
     flex-wrap: wrap;
   }
+
   .contacs_section {
     width: 40%;
     margin: 20px 0;
     padding: 0 15px;
   }
+
   .contacs_section_3 {
     flex-grow: 2;
     padding: 0 15px;
     margin: 20px 0;
   }
 }
+
 /* конец карты */
 
 /* рекомендации */
