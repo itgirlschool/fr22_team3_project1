@@ -7,6 +7,7 @@
 [class*="__container"] {
   max-width: 1170px;
   margin: 0 auto;
+  font-family: "Nunito", sans-serif;
 }
 
 /* навбар */
@@ -168,6 +169,7 @@
     background: #f1f6ff;
     height: 2px;
     width: 26px;
+    z-index: 10;
   }
 
   .icon_menu span {
@@ -193,6 +195,7 @@
     width: 100%;
     height: 2px;
     background: #32495e;
+    z-index: 1;
   }
 
   .close_icon_menu::before {
@@ -237,12 +240,7 @@
     color: #f1f6ff;
     padding: 13px 0;
   }
-
-  .submenu a:hover {
-    text-decoration: underline;
-  }
 }
-
 /* конец навбара */
 
 /* главный экран */
@@ -327,23 +325,22 @@
   padding-left: 10px;
 }
 
-button {
+.header_container button {
   box-sizing: border-box;
   border-radius: 25px;
-  padding: 10px 30px;
-  margin: 0 0 100px 0;
+  padding: 16px 44px;
   text-align: center;
   background-color: unset;
 }
 
-/* .header_left button:hover {
-  background-color: #f9f9f9;
-  color: #e95258;
+.header_left button:hover {
+  background-color: #f9f9f926;
+  /* color: #e95258; */
   transition: 0.2s ease;
-} */
+}
 
 .header_left_button {
-  margin-right: 100px;
+  margin: 0 100px 100px 0;
   border: 1px solid #f9f9f9;
 }
 
@@ -364,15 +361,15 @@ button {
 }
 
 .header_right_button {
-  margin-left: 100px;
+  margin: 0 0 100px 100px;
   border: 1px solid #32495e;
 }
 
-/* .header_right_button:hover {
-  background: #e95258;
-  color: #f1f6ff;
+.header_right_button:hover {
+  background: #e9525727;
+  /* color: #f1f6ff; */
   transition: 0.2s ease;
-} */
+}
 
 @media screen and (max-width: 1200px) {
   .header_left_p {
@@ -506,6 +503,231 @@ button {
   }
 }
 /* конец главного экрана */
+
+/* страница услуга1 */
+.main_usluga1 {
+  background: url(../images/image_bg_usluga1.png) no-repeat;
+  background-size: 55%;
+  background-position: right 80%;
+}
+
+.usluga1_body {
+  width: 44%;
+}
+
+.main_usluga1_container {
+  padding: 100px 0;
+}
+.main_usluga1_container h1 {
+  width: 80%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #32495e;
+}
+
+.main_usluga1_container p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #32495e;
+}
+
+.usluga-ul {
+  padding: 29px 15px;
+}
+
+.usluga-ul li {
+  margin: 12px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  list-style-type: circle;
+  color: #32495e;
+}
+
+.header_button {
+  padding: 16px 30px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background: unset;
+}
+
+.button_usluga1 {
+  border: 1px solid #32495e;
+}
+
+.button_usluga1 a {
+  color: #32495e;
+  text-decoration: none;
+}
+
+.button_usluga1:hover {
+  background: #e952574c;
+  transition: 0.2s;
+}
+
+/* .header_left_button a,
+.header_right_button a {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+} */
+
+.usluga1_content {
+  display: flex;
+  background: linear-gradient(to right, #32495e 50%, #f9f9f9 50%);
+}
+
+.image_usluga1_content {
+  flex-grow: 1;
+  align-self: center;
+  padding: 60px 0;
+  /* background-color: #32495e; */
+}
+
+.image_usluga1_content img {
+  width: 50vw;
+  /* height: 539px; */
+  height: 80vh;
+  object-fit: cover;
+}
+
+.text_usluga1_content {
+  flex-grow: 1;
+  padding: 60px 0 0 0;
+}
+
+.text_usluga1_content p {
+  margin: 0 0 40px 0;
+  padding: 0 22% 0 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #32495e;
+}
+
+@media screen and (max-width: 1400px) {
+  .main__container {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main__container {
+    max-width: 992px;
+    padding: 0 15px;
+  }
+  .usluga1_body {
+    width: 50%;
+  }
+  .main_usluga1_container {
+    padding: 70px 0;
+  }
+  .main_usluga1_container h1 {
+    width: 90%;
+    font-size: 44px;
+  }
+  .usluga-ul {
+    padding: 10px 15px;
+  }
+  .image_usluga1_content {
+    padding: 40px 0;
+  }
+  .text_usluga1_content {
+    padding: 40px 0;
+  }
+  .text_usluga1_content p {
+    margin: 0 0 30px 0;
+    padding: 0 20% 0 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main__container {
+    max-width: 750px;
+  }
+  .usluga1_body {
+    width: 55%;
+  }
+  .main_usluga1_container {
+    padding: 60px 0;
+  }
+  .main_usluga1_container h1 {
+    width: 100%;
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .main_usluga1_container p {
+    margin: 0;
+    font-size: 12px;
+  }
+  .usluga-ul {
+    margin: 10px 0;
+  }
+  .header_button {
+    padding: 14px 25px;
+  }
+  .usluga1_content {
+    display: block;
+    background: none;
+  }
+  .image_usluga1_content {
+    padding: 40px 0;
+    background: #32495e;
+  }
+  .image_usluga1_content img {
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .text_usluga1_content {
+    padding: 30px 15px;
+  }
+  .text_usluga1_content p {
+    margin: 0 0 30px 0;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .main__container {
+    max-width: none;
+  }
+  .usluga1_body {
+    width: 90%;
+  }
+  .main_usluga1_container {
+    padding: 40px 0;
+  }
+  .main_usluga1_container h1 {
+    width: 100%;
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .image_usluga1_content {
+    padding: 30px 0;
+  }
+  .text_usluga1_content {
+    padding: 30px 0 0 0;
+  }
+  .text_usluga1_content p {
+    margin: 0 0 30px 0;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+}
+/* страница услуга1 */
 
 /*  блок "наши услуги" */
 
@@ -861,6 +1083,7 @@ button {
   border: 1px solid #f9f9f9;
   box-sizing: border-box;
   border-radius: 25px;
+  background-color: unset;
 }
 
 .tab-container_button a {
@@ -1088,7 +1311,22 @@ button {
   height: 100%;
 }
 
+@media screen and (max-width: 1400px) {
+  .recommendation__container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .recommendation__container {
+    max-width: 992px;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .recommendation__container {
+    max-width: 750px;
+  }
   .recommend_container {
     padding: 60px 0;
   }
