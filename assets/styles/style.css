@@ -31,7 +31,7 @@
 .logo-image2 {
   width: 70px;
   height: 45px;
-  margin: 0 14px;
+  /* margin: 0 10px; */
   background-image: url(../images/logo2.png);
 }
 
@@ -511,29 +511,32 @@
   background-position: right 80%;
 }
 
-.usluga1_body {
+.usluga_body {
   width: 44%;
 }
 
-.main_usluga1_container {
+.main_usluga_container {
   padding: 100px 0;
 }
-.main_usluga1_container h1 {
-  width: 80%;
+
+.main_usluga_container h1 {
+  width: 75%;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 68px;
   text-transform: uppercase;
+}
+
+.usluga-1 {
   color: #32495e;
 }
 
-.main_usluga1_container p {
+.main_usluga_container p {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #32495e;
 }
 
 .usluga-ul {
@@ -547,7 +550,6 @@
   font-size: 14px;
   line-height: 17px;
   list-style-type: circle;
-  color: #32495e;
 }
 
 .header_button {
@@ -568,44 +570,33 @@
 }
 
 .button_usluga1:hover {
-  background: #e952574c;
+  background: #e952573b;
   transition: 0.2s;
 }
 
-/* .header_left_button a,
-.header_right_button a {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-} */
-
-.usluga1_content {
+.usluga_content {
   display: flex;
   background: linear-gradient(to right, #32495e 50%, #f9f9f9 50%);
 }
 
-.image_usluga1_content {
+.image_usluga_content {
   flex-grow: 1;
   align-self: center;
   padding: 60px 0;
-  /* background-color: #32495e; */
 }
 
-.image_usluga1_content img {
+.image_usluga_content img {
   width: 50vw;
-  /* height: 539px; */
   height: 80vh;
   object-fit: cover;
 }
 
-.text_usluga1_content {
+.text_usluga_content {
   flex-grow: 1;
   padding: 60px 0 0 0;
 }
 
-.text_usluga1_content p {
+.text_usluga_content p {
   margin: 0 0 40px 0;
   padding: 0 22% 0 60px;
   font-style: normal;
@@ -626,26 +617,26 @@
     max-width: 992px;
     padding: 0 15px;
   }
-  .usluga1_body {
+  .usluga_body {
     width: 50%;
   }
-  .main_usluga1_container {
+  .main_usluga_container {
     padding: 70px 0;
   }
-  .main_usluga1_container h1 {
+  .main_usluga_container h1 {
     width: 90%;
     font-size: 44px;
   }
   .usluga-ul {
     padding: 10px 15px;
   }
-  .image_usluga1_content {
+  .image_usluga_content {
     padding: 40px 0;
   }
-  .text_usluga1_content {
+  .text_usluga_content {
     padding: 40px 0;
   }
-  .text_usluga1_content p {
+  .text_usluga_content p {
     margin: 0 0 30px 0;
     padding: 0 20% 0 50px;
   }
@@ -655,18 +646,18 @@
   .main__container {
     max-width: 750px;
   }
-  .usluga1_body {
+  .usluga_body {
     width: 55%;
   }
-  .main_usluga1_container {
+  .main_usluga_container {
     padding: 60px 0;
   }
-  .main_usluga1_container h1 {
+  .main_usluga_container h1 {
     width: 100%;
     font-size: 34px;
     line-height: 50px;
   }
-  .main_usluga1_container p {
+  .main_usluga_container p {
     margin: 0;
     font-size: 12px;
   }
@@ -676,24 +667,24 @@
   .header_button {
     padding: 14px 25px;
   }
-  .usluga1_content {
+  .usluga_content {
     display: block;
     background: none;
   }
-  .image_usluga1_content {
+  .image_usluga_content {
     padding: 40px 0;
     background: #32495e;
   }
-  .image_usluga1_content img {
+  .image_usluga_content img {
     width: 100vw;
     height: 30vh;
     object-fit: cover;
     object-position: center;
   }
-  .text_usluga1_content {
+  .text_usluga_content {
     padding: 30px 15px;
   }
-  .text_usluga1_content p {
+  .text_usluga_content p {
     margin: 0 0 30px 0;
     padding: 0 15px;
     font-size: 12px;
@@ -704,30 +695,123 @@
   .main__container {
     max-width: none;
   }
-  .usluga1_body {
+  .usluga_body {
     width: 90%;
   }
-  .main_usluga1_container {
+  .main_usluga_container {
     padding: 40px 0;
   }
-  .main_usluga1_container h1 {
+  .main_usluga_container h1 {
     width: 100%;
     font-size: 26px;
     line-height: 35px;
   }
-  .image_usluga1_content {
+  .image_usluga_content {
     padding: 30px 0;
   }
-  .text_usluga1_content {
+  .text_usluga_content {
     padding: 30px 0 0 0;
   }
-  .text_usluga1_content p {
+  .text_usluga_content p {
     margin: 0 0 30px 0;
     padding: 0 15px;
     font-size: 12px;
   }
 }
 /* страница услуга1 */
+
+/* страница услуга2 */
+.main_usluga2 {
+  background: #e95258 url(../images/image_bg_usluga2.png) no-repeat;
+  background-size: 38%;
+  background-position: right bottom;
+}
+
+.usluga-2 {
+  color: #f3f5fa;
+}
+
+.button_usluga2 {
+  border: 1px solid #f9f9f9;
+}
+
+.button_usluga2 a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.button_usluga2:hover {
+  background: #f9f9f945;
+  transition: 0.2s;
+}
+
+/* страница услуга2 */
+
+/* страница о нас */
+.about_us {
+  padding: 130px 400px 57px 115px;
+  background: url(../images/image_about_us.png);
+}
+
+.about_us h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #f3f5fa;
+}
+
+.about_us_container {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+}
+
+.content_about_us {
+  flex-grow: 1;
+  padding: 60px 180px 60px 60px;
+  background: #32495e;
+}
+
+.content_about_us h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #f9f9f9;
+}
+
+.content_about_us p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f9f9f9;
+}
+
+.text_about_us {
+  flex-grow: 1;
+  padding: 39px 180px 39px 60px;
+  background: #0e2942;
+}
+
+.text_about_us p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8093ac;
+}
+
+.why_we {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #8093ac;
+}
 
 /*  блок "наши услуги" */
 
@@ -918,7 +1002,7 @@ p {
 .container-specialists {
   display: block;
   box-sizing: border-box;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .container-specialists__specialists {
@@ -937,7 +1021,7 @@ p {
   flex-direction: column;
 }
 
-.doc>h3 {
+.doc > h3 {
   margin-top: 30px;
 }
 
@@ -947,90 +1031,89 @@ p {
 
 @media (max-width: 1200px) {
   .container-specialists__specialists {
-      max-width: 970px;
+    max-width: 970px;
   }
 }
 
 @media (max-width: 992px) {
   .container-specialists__specialists {
-      display: none;
+    display: none;
   }
 
   .container-specialists__adaptive {
-      max-width: 750px;
-      margin: 0 auto;
-      padding: 0 15px 60px 15px;
-      display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 15px 60px 15px;
+    display: block;
   }
 
   .doc-top {
-      height: 70%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .doc {
-      width: 32%;
-      padding-top: 26px;
-      display: flex;
-      flex-direction: column;
+    width: 32%;
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
   }
 
   .doc-bottom {
-      height: 30%;
-      padding-top: 26px;
-      display: flex;
-      justify-content: center;
+    height: 30%;
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
   }
 
   .button-more {
-      padding: 13px 27px 13px 27px;
-      display: inline-block;
-      text-align: center;
-      font-size: 12px;
-      background-color: #F9F9F9;
-      color: #32495E;
-      border: 1px solid #32495E;
-      box-sizing: border-box;
-      border-radius: 25px;
-      cursor: pointer;
+    padding: 13px 27px 13px 27px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    color: #32495e;
+    border: 1px solid #32495e;
+    box-sizing: border-box;
+    border-radius: 25px;
+    cursor: pointer;
   }
 }
 
 @media (max-width: 767px) {
   .container-specialists__specialists {
-      max-width: 970px;
+    max-width: 970px;
   }
 
   .container-specialists__adaptive {
-      max-width: none;
-      margin: 0;
-      padding: 0 15px 30px 15px;
-      display: block;
-      justify-content: center;
+    max-width: none;
+    margin: 0;
+    padding: 0 15px 30px 15px;
+    display: block;
+    justify-content: center;
   }
 
   .doc {
-      width: 90%;
-      padding-top: 30px;
+    width: 90%;
+    padding-top: 30px;
   }
 
-  .doc>h3 {
-      margin-top: 15px;
-      margin-bottom: 15px;
-      font-size: 12px;
+  .doc > h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
   }
 
   p {
-      font-size: 12px;
+    font-size: 12px;
   }
-
 }
 /* конец блока Наши специалисты */
 
 /*Прайс лист*/
-h1 {
+.pricelist h1 {
   width: 100%;
   margin-top: 0;
   margin-bottom: 20px;
@@ -1042,7 +1125,8 @@ h1 {
 .container-pricelist {
   display: block;
   box-sizing: border-box;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  font-family: "Nunito", sans-serif;
 }
 
 .pricelist {
@@ -1085,7 +1169,7 @@ h1 {
 }
 
 .service {
-  color: #8093AC;
+  color: #8093ac;
 }
 
 .pricelist-bottom {
@@ -1101,9 +1185,9 @@ h1 {
   display: inline-block;
   text-align: center;
   font-size: 14px;
-  background-color: #FFFFFF;
-  color: #32495E;
-  border: 1px solid #32495E;
+  background-color: #ffffff;
+  color: #32495e;
+  border: 1px solid #32495e;
   box-sizing: border-box;
   border-radius: 25px;
   cursor: pointer;
@@ -1111,83 +1195,83 @@ h1 {
 
 @media (max-width: 1200px) {
   .pricelist {
-      max-width: 970px;
+    max-width: 970px;
   }
 }
 
 @media (max-width: 992px) {
   .pricelist {
-      max-width: 750px;
-      padding: 60px 15px 60px 15px;
+    max-width: 750px;
+    padding: 60px 15px 60px 15px;
   }
 
-  h1 {
-      margin-bottom: 26px;
-      font-size: 34px;
+  .pricelist h1 {
+    margin-bottom: 26px;
+    font-size: 34px;
   }
 
   .name2,
   .price2 {
-      display: none;
+    display: none;
   }
 
   .service-top,
   .cost-top {
-      padding-bottom: 26px;
-      font-size: 12px;
-      line-height: 15px;
+    padding-bottom: 26px;
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .service,
   .cost {
-      padding-bottom: 14px;
-      font-weight: 500 bold;
-      font-size: 14px;
-      line-height: 17.43px;
+    padding-bottom: 14px;
+    font-weight: 500 bold;
+    font-size: 14px;
+    line-height: 17.43px;
   }
 
   .pricelist-bottom {
-      padding-top: 12px;
+    padding-top: 12px;
   }
 
   .button-service {
-      padding: 12px 30px 12px 30px;
-      font-size: 12px;
+    padding: 12px 30px 12px 30px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 767px) {
   .pricelist {
-      max-width: none;
-      padding: 30px 30px 30px 15px;
+    max-width: none;
+    padding: 30px 30px 30px 15px;
   }
 
-  h1 {
-      margin-bottom: 26px;
-      font-size: 30px;
+  .pricelist h1 {
+    margin-bottom: 26px;
+    font-size: 30px;
   }
 
   .name2,
   .price2 {
-      display: none;
+    display: none;
   }
 
   .service-top,
   .cost-top {
-      padding-bottom: 30px;
-      line-height: 15px;
+    padding-bottom: 30px;
+    line-height: 15px;
   }
 
   .service,
   .cost {
-      padding-bottom: 10px;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14.94px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.94px;
   }
 
   .pricelist-bottom {
-      display: none;
+    display: none;
   }
 }
 /*конец блока Прайс лист*/
@@ -1274,8 +1358,6 @@ h1 {
 
 .tab-item {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .item_image {
@@ -1712,7 +1794,6 @@ h1 {
 @media screen and (max-width: 1200px) {
   .map__container {
     max-width: 992px;
-    /* margin: 0 60px; */
   }
 }
 
@@ -1729,21 +1810,17 @@ h1 {
     font-size: 34px;
     line-height: 52px;
   }
-
   .contacs h3 {
     font-size: 14px;
     line-height: 17px;
   }
-
   .contacs p {
     font-size: 12px;
     line-height: 18px;
   }
-
   .contacs {
     justify-content: space-between;
   }
-
   .contacs_section,
   .contacs_section_3 {
     width: 31%;
@@ -1765,27 +1842,22 @@ h1 {
     font-size: 18px;
     line-height: 26px;
   }
-
   .contacs h3 {
     font-size: 10px;
     line-height: 12px;
   }
-
   .contacs p {
     font-size: 8px;
     line-height: 14px;
   }
-
   .contacs {
     flex-wrap: wrap;
   }
-
   .contacs_section {
     width: 40%;
     margin: 20px 0;
     padding: 0 15px;
   }
-
   .contacs_section_3 {
     flex-grow: 2;
     padding: 0 15px;
@@ -1793,9 +1865,10 @@ h1 {
   }
 }
 /* конец карты */
+
 /*футер*/
 
-h3 {
+.footer h3 {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 16px;
@@ -1815,7 +1888,7 @@ h3 {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 .footer__top {
@@ -1824,7 +1897,7 @@ h3 {
   justify-content: space-around;
 }
 
-.logo {
+.footer__top .logo {
   width: 30%;
   display: flex;
   justify-content: start;
@@ -1862,9 +1935,9 @@ h3 {
   padding-bottom: 10px;
 }
 
-.about-connect>li>a {
+.about-connect > li > a {
   text-decoration: none;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 .social {
@@ -1902,9 +1975,9 @@ h3 {
   display: block;
 }
 
-.footer__box-up>a {
+.footer__box-up > a {
   text-decoration: none;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 .up {
@@ -1923,92 +1996,92 @@ h3 {
 
 @media (max-width: 1200px) {
   .footer {
-      max-width: 970px;
+    max-width: 970px;
   }
 }
 
 @media (max-width: 992px) {
   .footer {
-      max-width: 750px;
-      padding: 60px 15px;
-      font-size: 12px;
+    max-width: 750px;
+    padding: 60px 15px;
+    font-size: 12px;
   }
 
-  h3 {
-      margin-bottom: 26px;
-      font-size: 14px;
+  .footer__top h3 {
+    margin-bottom: 26px;
+    font-size: 14px;
   }
 
-  .logo {
-      width: 35%;
+  .footer__top .logo {
+    width: 35%;
   }
 
   .footer__column-about {
-      width: 30%;
+    width: 30%;
   }
 
   .footer__column-connect {
-      width: 20%;
+    width: 20%;
   }
 
   .about-connect__item,
   .social {
-      padding-bottom: 14px;
+    padding-bottom: 14px;
   }
 
   .footer__box-up {
-      width: 15%;
+    width: 15%;
   }
 
   .up {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .footer__bottom {
-      padding-top: 20px;
+    padding-top: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .footer {
-      max-width: none;
-      margin: 0;
-      padding: 30px 15px;
-      display: block;
-      justify-content: start;
-      font-size: 10px;
+    max-width: none;
+    margin: 0;
+    padding: 30px 15px;
+    display: block;
+    justify-content: start;
+    font-size: 10px;
   }
 
   .footer__top {
-      height: min-content;
-      display: flex;
-      justify-content: start;
-      flex-wrap: wrap;
+    height: min-content;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
   }
 
-  .logo {
-      width: 85%;
-      order: 1;
-      display: flex;
+  .footer__top .logo {
+    width: 85%;
+    order: 1;
+    display: flex;
   }
 
   .footer__box-up {
-      width: 12%;
-      order: 2;
-      display: flex;
+    width: 12%;
+    order: 2;
+    display: flex;
   }
 
   .up {
-      display: none;
+    display: none;
   }
 
   .footer__column-about {
-      width: 40%;
-      order: 3;
+    width: 40%;
+    order: 3;
   }
 
   .footer__column-connect {
-      width: 40%;
-      order: 4;
+    width: 40%;
+    order: 4;
   }
 }
