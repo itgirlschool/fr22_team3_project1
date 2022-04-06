@@ -475,13 +475,13 @@
 
 /* страница услуга1 */
 .main_usluga1 {
-  background: url(../images/image_bg_usluga1.png) no-repeat;
-  background-size: 55%;
+  background: #f9f9f9 url(../images/image_bg_usluga1.png) no-repeat;
+  background-size: 57%;
   background-position: right 80%;
 }
 
 .usluga_body {
-  width: 44%;
+  width: calc(100vw - 70%);
 }
 
 .main_usluga_container {
@@ -531,16 +531,15 @@
 
 .button_usluga1 {
   border: 1px solid #32495e;
-}
-
-.button_usluga1 a {
   color: #32495e;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button_usluga1:hover {
-  background: #e952573b;
-  transition: 0.2s;
+  background: #e95257;
+  color: #f9f9f9;
+  transition: 0.5s;
 }
 
 .usluga_content {
@@ -582,12 +581,15 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .main_usluga1 {
+    background-size: 50%;
+  }
   .main__container {
     max-width: 992px;
     padding: 0 15px;
   }
   .usluga_body {
-    width: 50%;
+    width: calc(100vw - 60%);
   }
   .main_usluga_container {
     padding: 70px 0;
@@ -616,7 +618,7 @@
     max-width: 750px;
   }
   .usluga_body {
-    width: 55%;
+    width: calc(100vw - 50%);
   }
   .main_usluga_container {
     padding: 60px 0;
@@ -661,6 +663,10 @@
 }
 
 @media screen and (max-width: 530px) {
+  .main_usluga1,
+  .main_usluga2 {
+    background-image: none;
+  }
   .main__container {
     max-width: none;
   }
@@ -702,16 +708,15 @@
 
 .button_usluga2 {
   border: 1px solid #f9f9f9;
-}
-
-.button_usluga2 a {
   color: #f9f9f9;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button_usluga2:hover {
-  background: #f9f9f945;
-  transition: 0.2s;
+  background: #f9f9f9;
+  color: #e95258;
+  transition: 0.5s;
 }
 
 /* страница услуга2 */
